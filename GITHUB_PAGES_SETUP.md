@@ -25,10 +25,10 @@ After creating the repository, GitHub will show you the repository URL. It will 
 1. In your repository, go to **Settings** (top menu)
 2. Scroll down to **Pages** (left sidebar)
 3. Under "Source", select:
-   - **Source**: `Deploy from a branch`
-   - **Branch**: `gh-pages` (we'll create this via GitHub Actions)
-   - **Folder**: `/ (root)`
+   - **Source**: `GitHub Actions` (this uses the workflow to deploy automatically)
 4. Click **Save**
+   
+   **Note:** With GitHub Actions deployment, no `gh-pages` branch is needed. The workflow handles everything automatically.
 
 ## Step 4: Initialize Local Repository
 
@@ -59,7 +59,7 @@ git commit -m "Initial portfolio setup"
 git push -u origin main
 ```
 
-The GitHub Actions workflow will automatically build and deploy to the `gh-pages` branch.
+The GitHub Actions workflow will automatically build and deploy your site.
 
 ## Step 6: Verify Deployment
 

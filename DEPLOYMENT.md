@@ -27,9 +27,10 @@
    - Go to your repository on GitHub
    - Click **Settings** → **Pages**
    - Under "Source", select:
-     - Branch: `gh-pages`
-     - Folder: `/ (root)`
+     - **Source**: `GitHub Actions` (not "Deploy from a branch")
    - Click **Save**
+   
+   **Note:** With GitHub Actions deployment, you don't need a `gh-pages` branch. The workflow handles deployment automatically.
 
 4. **Wait for Deployment**
    - GitHub Actions will automatically build and deploy
