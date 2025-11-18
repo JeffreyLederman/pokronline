@@ -61,40 +61,12 @@ git push -u origin main
 
 The GitHub Actions workflow will automatically build and deploy to the `gh-pages` branch.
 
-## Step 6: Configure Custom Domain (pokronline.com)
+## Step 6: Verify Deployment
 
-Once deployment is working:
+After the workflow completes (usually 1-2 minutes):
 
-1. In your repository **Settings** → **Pages**
-2. Under "Custom domain", enter: `pokronline.com`
-3. Click **Save**
-4. GitHub will provide DNS records you need to add to your domain registrar
-
-### DNS Configuration
-
-Add these DNS records at your domain registrar (where you bought pokronline.com):
-
-**Type A Records:**
-
-- `@` → `185.199.108.153`
-- `@` → `185.199.109.153`
-- `@` → `185.199.110.153`
-- `@` → `185.199.111.153`
-
-**OR Type CNAME Record:**
-
-- `@` → `YOUR_USERNAME.github.io`
-
-**For www subdomain:**
-
-- `www` → `YOUR_USERNAME.github.io` (CNAME)
-
-## Step 7: Verify Deployment
-
-After DNS propagates (can take up to 48 hours):
-
-- Visit `https://pokronline.com` to see your portfolio
-- Visit `https://YOUR_USERNAME.github.io/pokronline` as backup URL
+- Visit `https://YOUR_USERNAME.github.io/pokronline/` to see your portfolio
+- Check the **Actions** tab in your repository to monitor deployment status
 
 ---
 

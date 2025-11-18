@@ -47,9 +47,9 @@ npm run dev
 
 1. Follow the instructions in `GITHUB_PAGES_SETUP.md` to set up your GitHub repository and Pages.
 
-2. Update `vite.config.js`:
-   - If using a custom domain (pokronline.com), change `base: '/pokronline/'` to `base: '/'`
-   - If using GitHub Pages subpath, keep `base: '/pokronline/'` (replace 'pokronline' with your repo name)
+2. Ensure `vite.config.js` has the correct base path:
+   - The `base` path should match your repository name: `base: '/pokronline/'`
+   - Replace 'pokronline' with your actual repository name if different
 
 ### Deploy to GitHub Pages
 
@@ -64,13 +64,7 @@ git push origin main
 The GitHub Actions workflow will automatically:
 1. Build your React app
 2. Deploy it to the `gh-pages` branch
-3. Make it available at your GitHub Pages URL
-
-### Custom Domain Setup
-
-1. In your repository Settings → Pages, add your custom domain: `pokronline.com`
-2. Add the DNS records provided by GitHub to your domain registrar
-3. Wait for DNS propagation (can take up to 48 hours)
+3. Make it available at: `https://YOUR_USERNAME.github.io/pokronline/`
 
 ## Customization
 
