@@ -27,7 +27,7 @@ After creating the repository, GitHub will show you the repository URL. It will 
 3. Under "Source", select:
    - **Source**: `GitHub Actions` (this uses the workflow to deploy automatically)
 4. Click **Save**
-   
+
    **Note:** With GitHub Actions deployment, no `gh-pages` branch is needed. The workflow handles everything automatically.
 
 ## Step 4: Initialize Local Repository
