@@ -37,6 +37,9 @@ jobs:
       - name: Remove CNAME if exists
         run: rm -f dist/CNAME || true
 
+      - name: List build output
+        run: ls -la dist/ && ls -la dist/assets/ || true
+
       - name: Setup Pages
         uses: actions/configure-pages@v4
 
